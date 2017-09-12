@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ncopado.miscontactosapp.DetalleContacto"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textStyle="bold"
+        android:textSize="@dimen/nombre_contacto"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_layout_top"
+        android:onClick="llamar"
+        >
+        <ImageView
+            android:id="@+id/imgTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_phone_48"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_layout_top"
+        android:onClick="EnviarMail"
+        >
+
+        <ImageView
+            android:id="@+id/imgMail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/icons8_inbox_48"
+
+            />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correo"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size"
+         />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
